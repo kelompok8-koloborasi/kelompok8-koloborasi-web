@@ -1,0 +1,215 @@
+:root {
+    --pink: #c85b8d;
+    --blue: #fee7f1;
+    --yellow: #ffe59a;
+    --white: #ffffff;
+    --ink: #30394b;
+    --muted: #727d8d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--ink);
+    background: #fffdfd;
+}
+
+header {
+    padding: 20px 30px;
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-menu a {
+    color: var(--ink);
+    text-decoration: none;
+}
+
+/* Reset dasar untuk margin dan font */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Menengahkan seluruh isi di dalam header */
+.main-header {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa; 
+}
+
+/* Mengatur daftar menu agar berjejer ke samping dan di tengah */
+.nav-menu {
+    display: flex;
+    justify-content: center;  
+    list-style: none;         
+    padding: 0;
+    margin: 15px 0 0 0;
+    gap: 20px;                
+}
+
+/* Mengatur tampilan link/kontak menu */
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    color: #007bff;           
+}
+
+/* Mengatur tampilan bagian hero */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #fff1f7, #eff8ff, #fff9e8);
+}
+
+.hero h2 {
+    font-size: 40px;
+    color: var(--pink);
+}
+
+.hero a {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: var(--pink);
+    color: white;
+}
+
+.service {
+    padding: 60px 30px;
+    background: #fffdfd;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.dampak {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.card {
+    padding: 30px;
+    border-radius: 20px;
+    background: var(--white);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    color: var(--pink);
+    border-bottom: 2px solid var(--yellow);
+    padding-bottom: 10px;
+}
+
+.card h4 {
+    color: #bb4c90;
+}
+
+.card p, .card li {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+.card th {
+    background: var(--blue);
+}
+
+.card th, .card td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.card tr:nth-child(even) {
+    background: #eff8ff;
+}
+
+.site-footer {
+    padding: 25px;
+    text-align: center;
+    color: white;
+    background: #46546a;
+}
+
+.site-footer a {
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .dampak {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.nav-navigation ul,
+ul.nav-navigation {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.nav-navigation li a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #b84d78;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-navigation li a:hover {
+    background: #b84d78;
+    color: white;
+}
+
+.ulasan-teks {
+    text-align: justify;
+    text-indent: 40px;
+    line-height: 1.6;
+}
